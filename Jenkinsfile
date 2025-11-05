@@ -1,6 +1,6 @@
 pipeline {
     agent any // Jenkins가 실행될 환경
-    tools { docker 'docker-cli' }
+    tools { dockerTool 'docker-cli' }
     environment {
         // 이 실습에서 사용할 이미지와 컨테이너 이름
         IMAGE_NAME = 'my-local-react-app'
